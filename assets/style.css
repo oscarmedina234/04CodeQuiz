@@ -3,7 +3,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-border: 10px solid pink;
+padding:10px;
 max-width: 100vw;
 
 }
@@ -27,18 +27,37 @@ display: flex;
 justify-content: right;
 }
 
-.imgContainer {
+.greetingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+.imgContainer {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .titleContainer {
-
+padding: 5px;
 }
 
 .subheadingContainer {
-
+padding: 5px;
 }
 
 .buttonContainer {
+    padding-top: 15px;
+}
 
+.startButton {
+    background-color: #fa748f;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
