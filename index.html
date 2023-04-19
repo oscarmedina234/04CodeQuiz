@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
  
-   <link rel="stylesheet" href="./assets/style.css">   
+   <link rel="stylesheet" href="./assets/css/style.css">   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Mukta+Vaani:wght@200&family=PT+Sans+Caption&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/reset.css">
+<link rel="stylesheet" href="./assets/css/reset.css">
  
     
 </head>
@@ -18,19 +18,19 @@
    <header>
     
         <!--View Highscores-->
-        <div class="highscoreContainer">
-            <a href="./highscores.html">View Highscores</a>
+        <div class="highscoreContainer" id="viewHScores">
+            <h2>View Highscores</h2>
         </div>
         <!-- Timer -->
         <div class="timerContainer">
-            <h3> Time<span id="timer"></span> </h3>
+            <h2> Time<span id="timer"> 0 </span> </h2>
         </div>
     
 
    </header>
 
    <main>
-<div class="greetingContainer">
+<div class="greetingContainer" id="welcome">
 <div class="imgContainer">
        <img src="./assets/images/stevenStudying.jpeg" alt="picture of steven studying">
     </div>
@@ -48,9 +48,50 @@
     <div class="buttonContainer">
 <button class="startButton" id="startQuiz"> Start Quiz </button>
     </div>
+
+
+<!-- Quiz -->
+<div id="quiz">
+<h1 class="question-container" id="question"></h1>
+<div class="answer-buttons" id="answers">
+    <div>
+        <button type="button" class="answer-button" id="0"></button>
+    </div>
+    <div>
+        <button type="button" class="answer-button" id="1"></button>
+    </div>
+    <div>
+        <button type="button" class="answer-button" id="2"></button>
+    </div>
+    <div>
+        <button type="button" class="answer-button" id="3"></button>
+    </div>
 </div>
+</div>
+
+<!-- Input High scores-->
+  <div id="inputScore">
+    <h1> All Done!</h1>
+    <h2> Your score: <span id="score"></span></h2>
+    <h2> Enter initials: <input type="text" id="initials"></h2>
+    <button class="answer-button" id="submitInitials"> Submit </button>
+  </div>
+
+  <!-- View High Scores -->
+  <div id="highScores">
+    <h1> Highscores </h1>
+    <div id="scores"></div>
+    <button class="answer-button" id="goBack"> Go Back</button>
+    <button class="answer-button" id="clearScores"> Clear</button>
+  </div>
+
+
    </main>
 
-    <script src="./assets/script.js"></script>
+    <script src="./assets/js/question.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
 </body>
 </html>
