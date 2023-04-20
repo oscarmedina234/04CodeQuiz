@@ -153,6 +153,7 @@ function renderQuestion() {
         answersEl.children[i].children[0].textContent = 
         `${(i + 1)}: ${questions[currentQ].choices[i]}`;
     }
+    console.log("questions");
 }
 
 // put high scores in local storage //
@@ -189,6 +190,7 @@ startQuizButtonEl.addEventListener("click", function (){
     startTimer();
     renderQuestion();
     show(quizEl);
+    console.log("start");
 }); 
 
 answersEl.addEventListener("click", function (e) {
@@ -222,3 +224,12 @@ clearButtonEl.addEventListener("click", function () {
     localStorage.setItem("scores", JSON.stringify(highScores));
     renderHighScores();
 });
+
+function hideEverything() {
+    hide(quizEl);
+    hide(highScoresEl);
+    hide(inputScoresEl);
+}
+
+hideEverything();
+
