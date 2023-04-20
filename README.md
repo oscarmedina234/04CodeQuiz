@@ -14,7 +14,7 @@ As a fan of steven universe I wanted to be able to test my knowledge of the show
 ## Usage
 
 When you open the page you click start quiz. Then you go through the quiz.
-  
+  (./assets/images/app screenshot.png)
 
 ## License
 
