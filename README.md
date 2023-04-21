@@ -2,7 +2,7 @@
 
 ## Description
 
-As a fan of steven universe I wanted to be able to test my knowledge of the show in an application quiz. When you go through the quiz it will ask you questions. I looked up code from another repo to learn how the java script works and I have some decent understanding but I still couldnt get it to actualy render the questins in and I looked into the console and nothing was giving me an error. 
+As a fan of steven universe I wanted to be able to test my knowledge of the show in an application quiz. When you go through the quiz it will ask you questions. I looked up code from another repo to learn how the java script works. I used thier code to learn how it worked for them and i tried to apply it to my own html and css I had set up already.  I have some decent understanding but I still couldnt get it to actualy render the questins in and I looked into the console and nothing was giving me an error. Frogot to cite it and I cant seem to find it again. Will try to link if i can. 
 
 
 ## Usage
